@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Đơn</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<body>
+    <div class="header1 flex">
+        <div>H&N WEDDING & EVENTS</div>
+        <div class="subheader1 flex">
+            <div class="none"><i class="fa-solid fa-phone"></i>(+84)774617027</div>
+            <div class="none"><i class="fa-solid fa-envelope"></i> event@hn.vn</div>
+            <div><i class="fa-brands fa-font-awesome"></i>Việt Nam</div>
+        </div>
+    </div>
+    <div class="header2">
+        <ul class="menu flex">
+            <li><img src="images/logo.png"></li>
+            <li class="sub"><a href="/index.html">TRANG CHỦ</a></li>
+            <li class="sub"><a href="/ThucDon.html">THỰC ĐƠN</a> </li>
+            <li class="sub"><a href="/KinhNghiemCuoi.html">KINH NGHIỆM </a></li>
+            <li class="sub"><a href="/hoinghi.html">HỘI NGHỊ</a></li>
+            <li class="sub button"><a href="/lienhe.html"><i class="fa-solid fa-calendar-days"></i>LIÊN HỆ</a></li>
+            <li><div id="toggle"><i class="fas fa-bars"></i></div></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="slider-header">
+            <div class="btn-header">
+                <i class="fa-solid fa-circle-chevron-left" onclick="prevHeader()"></i>
+                <i class="fa-solid fa-circle-chevron-right" onclick="nextHeader()"></i>
+            </div>
+            <div class="slider-header-main flex">
+                <div class="slider-item">
+                    <img src="./img/BG_TĐ.jpg" alt="">
+                    <div class="text-on-img">
+                        <p>THỰC ĐƠN</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="img/BG_TĐ1.jpg" alt="">
+                    <div class="text-on-img">
+                        <p>THỰC ĐƠN</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="img/BG_TĐ2.jpg" alt="">
+                    <div class="text-on-img">
+                        <p>THỰC ĐƠN</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="img/BG_TĐ4.jpg" alt="">
+                    <div class="text-on-img">
+                        <p>THỰC ĐƠN</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="img/BG_TĐ3.jpg" alt="">
+                    <div class="text-on-img">
+                        <p>THỰC ĐƠN</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="img/BG_TĐ5.jpg" alt="">
+                    <div class="text-on-img">
+                        <p>THỰC ĐƠN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-heading">Thực Đơn Tự Chọn</div>
+        <div class="nav">
+            <div class="item">
+                <div class="btnctrl"><a href="#item-1">MÓN KHAI VỊ</a></div>
+            </div>
+            <div class="item">
+                <div class="btnctrl"><a href="#item-2" >MÓN CHÍNH</a></div>
+            </div>
+            <div class="item">
+                <div class="btnctrl"><a href="#item-3" >MÓN SÚP</a></div>
+            </div>
+            <div class="item">
+                <div class="btnctrl"><a href="#item-4" >MÓN TRÁNG MIỆNG</a></div>
+            </div>
+        </div>
+
+        <div class="food">
+            <div class="section animate-charcter" id="item-1"><img src="img/icon.png">Món Khai Vị<img src="img/icon.png"></div>
+            <div class="item-child" >
+                <div class="cont-item-child wow animate__slideInDown" data-wow-duration="1.2s">
+                    <img src="img/item1-1.jpg" alt="item1.1">
+                    <div>Cá hồi tẩm bột chiên giòn dùng với gỏi xoài Thái</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInDown" data-wow-duration="1.4s">
+                    <img src="img/item1-2.jpg" alt="item1.1">
+                    <div>Tôm cuộn khoai môn chiên giòn sốt tartar</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInDown" data-wow-duration="1.6s">
+                    <img src="img/item1-3.jpg" alt="item1.1">
+                    <div>Salad củ hũ dừa và tôm càng sốt cay</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInUp" data-wow-duration="1.2s">
+                    <img src="img/item1-4.jpg" alt="item1.1">
+                    <div>Cánh gà nướng sốt BBQ dùng vời salad - Ba rọi cuộn nấm sốt phô mai</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInUp" data-wow-duration="1.4s">
+                    <img src="img/item1-5.jpg" alt="item1.1">
+                    <div>Củ sen bách hoa sốt chua ngọt</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInUp" data-wow-duration="1.6s">
+                    <img src="img/item1-6.jpg" alt="item1.1">
+                    <div>Mực xuyên tiêu sốt tamarind</div>
+                </div>
+            </div>  
+
+            <!-- ẨM THỰC -->
+            <div class="CULINARY">
+                <div class="culinary1">
+                    <span class="title-word title-word-1">ẨM</span>
+                    <span class="title-word title-word-2">THỰC</span> 
+                </div>
+                <div class="culinary2">
+                    <figure class="c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom">
+                        <img src="img/culi1.jpg" alt="Sample Image">
+                        <figcaption class="c4-layout-top-left">
+                            <h3> HƯƠNG VỊ ĐẶC SẮC - YẾN TIỆC</h3><br>
+                            <p>Với sự thấu hiểu về khẩu vị của thực khách cùng bề dày kinh nghiệm hơn 15 năm, các đầu bếp tại Bách Việt làm việc bằng cả cái tâm của nghề, thế nên các món ăn ra đời đều có hương vị đặc sắc và phù hợp khẩu vị của đại đa số thực khách.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom">
+                        <img src="img/culi2.jpg" alt="Sample Image">
+                        <figcaption class="c4-layout-top-left">
+                            <h3>Ẩm thực kết hợp Âu - Á</h3>
+                            <p>Thực đơn tại Nhà hàng H&N rất  đa dạng được kết hợp từ các món ăn theo kiểu Á và kiểu Âu, được làm công phu và mới lạ.  Sự kết hợp hết sức tinh tế giữa hai nền ẩm thực đặc sắc mà vẫn phù hợp với khẩu vị của người dân Việt Nam và dễ dàng làm hài lòng cả những khách hàng khó tính. </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom">
+                        <img src="img/culi3.jpg" alt="Sample Image">
+                        <figcaption class="c4-layout-top-left">
+                            <h3>Ẩm thực hòa quyện chất và lượng</h3>
+                            <p>Các menu của H&N được sắp xếp khoa học và hài hòa, đảm bảo dinh dưỡng cũng như sự hòa quyện về hương vị một cách tinh tế. Khởi đầu  cho một tiệc cưới như ý là khai vị với những món ăn nhẹ, hấp dẫn kích thích vị giác, Sau đó thực khách  sẽ được thay đổi vị giác với những món chính ngon, lạ và hoàn toàn nóng sốt.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="section animate-charcter" id="item-2"><img src="img/icon.png">Món Chính<img src="img/icon.png"></div>
+            <div class="item-child">
+                <div class="cont-item-child wow animate__slideInDown" data-wow-duration="1.2s">
+                    <img src="img/item2-1.jpg" alt="item2">
+                    <div>Tôm sú sốt lá hương nhu và thịt heo bằm
+                    </div>
+                </div>
+                <div class="cont-item-child wow animate__slideInDown" data-wow-duration="1.4s">
+                    <img src="img/item2-2.jpg" alt="item2">
+                    <div>Bò xào sốt tương tỏi ớt dùng với bánh mỳ</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInDown" data-wow-duration="1.6s">
+                    <img src="img/item2-3.jpg" alt="item2">
+                    <div>Bồ câu quay mắm nhĩ dùng với bánh bao chiên</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInUp" data-wow-duration="1.2s">
+                    <img src="img/item2-4.jpg" alt="item2">
+                    <div>Ba rọi heo quay củ hồi - Tiến vua chua ngọt</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInUp" data-wow-duration="1.4s">
+                    <img src="img/item2-5.jpg" alt="item2">
+                    <div>Cơm Nhật cà ri và tôm sốt teppan</div>
+                </div>
+                <div class="cont-item-child wow animate__slideInUp" data-wow-duration="1.6s">
+                    <img src="img/item2-6.jpg" alt="item2">
+                    <div>Lẩu bò Mỹ cuộn nấm dùng với mì somen</div>
+                </div>
+            </div>
+
+         
+        </div>
+     <!-- GIỚI THIỆU THỰC ĐƠN -->
+        <div class="section2">
+            <div class="menu-introduction wow animate__fadeInUp">
+                <h1>Thực Đơn</h1>
+                <p>Được các chuyên gia ẩm thực giàu kinh nghiệm của H&N chế biến, thực đơn của chúng tôi luôn được đầu tư và đổi mới liên tục sẽ mang đến cho thực khách những món ăn đa dạng và có sự dung hoà giữa văn hoá ẩm thực Á - Âu, đáp ứng tất cả các nhu cầu của quý khách.</p>
+            </div>
+            <div class="imgOfMenu">
+                <img src="img/Chinh1.jpeg"  alt="" class="wow animate__fadeInTopLeft">
+                <img src="img/Chinh2.jpeg" class="img24 wow animate__fadeInTopRight" alt="">
+                <img src="img/Chinh3.jpeg" class="img34 wow animate__fadeInBottomLeft" alt="">
+                <img src="img/Chinh4.jpeg" class="img34 img24 wow animate__fadeInBottomRight" alt="">
+             </div>
+        </div>
+        <div class="section3 food flex">
+            <div id="item-3" class="cont-item-child2">
+                <div class="waviy">
+                    <span style="--i:1">M</span>
+                    <span style="--i:2">Ó</span>
+                    <span style="--i:3">N</span>
+                    <span style="--i:4">S</span>
+                    <span style="--i:5">Ú</span>
+                    <span style="--i:6">P</span>
+                </div>
+                <div class="flex">
+                    <div><img src="img/item3-1.jpg" alt="Súp">Súp bí đỏ</div>
+                    <div><img src="img/Chinh2.jpeg" alt="Súp">Súp cua</div>
+                </div>
+            </div>
+            <div id="item-4" class="cont-item-child2">
+                <div class="waviy">
+                    <span style="--i:1">M</span>
+                    <span style="--i:2">Ó</span>
+                    <span style="--i:3">N</span>
+                    <span style="--i:4">T</span>
+                    <span style="--i:5">R</span>
+                    <span style="--i:6">Á</span>
+                    <span style="--i:7">N</span>
+                    <span style="--i:8">G</span>
+                    <span style="--i:4">M</span>
+                    <span style="--i:5">I</span>
+                    <span style="--i:6">Ệ</span>
+                    <span style="--i:7">N</span>
+                    <span style="--i:8">G</span>
+                   </div>       
+                <div class="flex">
+                    <div><img src="img/item4-1.jpg" alt="MOUSSE">Bánh mousse chanh dây</div>
+                    <div><img src="img/item4-2.jpg" alt="MOUSSE">Bánh táo tatin</div>
+                </div>
+            </div>
+        </div>   
+        <div class="wedding-package">
+            <p><img src="img/icon.png">Gói Tiệc Cưới<img src="img/icon.png"></p>
+            <div class="slider-package">
+                <div class="btn-package">
+                    <i class="fa-solid fa-circle-chevron-left" onclick="prevPackage()"></i>
+                    <i class="fa-solid fa-circle-chevron-right" onclick="nextPackage()"></i>
+                </div>
+                <div class="slider-package-main flex">
+                    <div class="page">
+                        <div class="package">GÓI ƯU ĐÃI TIỆC CƯỚI TỪ (10-19 BÀN)</div>
+                        <div class="page1-1 content-page1-1">
+                            <div>
+                                <p>Trung tâm tiệc cưới H&N hân hạnh mang đến khách hàng nhiều gói ưu đãi tiệc cưới hấp dẫn, không gian sảnh tiệc cưới được bày trí một cách sang trọng, tinh tế, có công suất từ 100 Khách đến hơn trên 700 Khách. Trang thiết bị âm thanh, ánh sáng, màn hình LED hiện đại, cùng đội ngũ nhân viên chuyên nghiệp.<br>
+                                Hãy liên hệ hôm nay, H&N sẽ cùng bạn lên kế hoạch thật chi tiết, chu toàn cho ngày trọng đại nhất trong cuộc đời của đôi bạn.<br>
+                                Gói ưu đãi tiệc cưới dành cho <b>Qúy khách đặt bàn tiệc cưới chính thức từ 10 - 19 bàn:</b></p><br>
+                                <ul>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Xe điện đưa đón</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Gửi xe</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Khăn lạnh</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Phòng trang điểm CD</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Liễn và bút ký tên lưu niệm</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Giá để hình CD - CR</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Thùng đựng tiền mừng</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Trụ hoa lối đi tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Hoa tươi trang trí bàn tiệc tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Tháp ly Champagne và đá khói</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Hai chai Champagne chương trình lễ</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page1-1">
+                            <img src="img/goitiec1.jpeg" alt="Gói 1">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="package">GÓI ƯU ĐÃI TIỆC CƯỚI TỪ (20-29 BÀN)</div>
+                        <div class="page1-1 content-page1-1">
+                            <div>
+                                <p>Trung tâm tiệc cưới H&N hân hạnh mang đến khách hàng nhiều gói ưu đãi tiệc cưới hấp dẫn, không gian sảnh tiệc cưới được bày trí một cách sang trọng, tinh tế, có công suất từ 100 Khách đến hơn trên 700 Khách. Trang thiết bị âm thanh, ánh sáng, màn hình LED hiện đại, cùng đội ngũ nhân viên chuyên nghiệp.<br>
+                                Hãy liên hệ hôm nay, H&N sẽ cùng bạn lên kế hoạch thật chi tiết, chu toàn cho ngày trọng đại nhất trong cuộc đời của đôi bạn.<br>
+                                Gói ưu đãi tiệc cưới dành cho <b>Qúy khách đặt bàn tiệc cưới chính thức từ 20 - 29 bàn:</b></p><br>
+                                <ul>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Xe điện đưa đón</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Gửi xe</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Khăn lạnh</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Phòng trang điểm CD</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Liễn và bút ký tên lưu niệm</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Giá để hình CD - CR</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Thùng đựng tiền mừng</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Trụ hoa lối đi tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Hoa tươi trang trí bàn tiệc tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Tháp ly Champagne và đá khói</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Hai chai Champagne chương trình lễ</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Hoa tươi trang trí bàn bánh cưới và tháp ly</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Bánh kem 05 tầng (1 tầng thật)</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Pháo kim tuyến</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Bữa ăn nhẹ trước tiệc cho CD - CR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page1-1">
+                            <img src="img/goitiec2.jpeg" alt="Gói 1">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="package">GÓI ƯU ĐÃI TIỆC CƯỚI TỪ (30-39 BÀN)</div>
+                        <div class="page1-1 content-page1-1">
+                            <div>
+                                <p>Trung tâm tiệc cưới H&N hân hạnh mang đến khách hàng nhiều gói ưu đãi tiệc cưới hấp dẫn, không gian sảnh tiệc cưới được bày trí một cách sang trọng, tinh tế, có công suất từ 100 Khách đến hơn trên 700 Khách. Trang thiết bị âm thanh, ánh sáng, màn hình LED hiện đại, cùng đội ngũ nhân viên chuyên nghiệp.<br>
+                                Hãy liên hệ hôm nay, H&N sẽ cùng bạn lên kế hoạch thật chi tiết, chu toàn cho ngày trọng đại nhất trong cuộc đời của đôi bạn.<br>
+                                Gói ưu đãi tiệc cưới dành cho <b>Qúy khách đặt bàn tiệc cưới chính thức từ 30 - 39 bàn:</b></p><br>
+                                <ul>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Xe điện đưa đón</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Gửi xe</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Khăn lạnh</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Phòng trang điểm CD</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Liễn và bút ký tên lưu niệm</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Giá để hình CD - CR</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Thùng đựng tiền mừng</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Trụ hoa lối đi tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Hoa tươi trang trí bàn tiệc tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Tháp ly Champagne và đá khói</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Hai chai Champagne chương trình lễ</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Hoa tươi trang trí bàn bánh cưới và tháp ly</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Bánh kem 05 tầng (1 tầng thật)</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Pháo kim tuyến</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Bữa ăn nhẹ trước tiệc cho CD - CR</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Màn hình Led khai tiệc</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Khánh tiết đón khách</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">MC dẫn chương trình lễ</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Nước ngọt, nước tinh khiết suốt tiệc</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page1-1">
+                            <img src="img/goitiec3.jpeg" alt="Gói 1">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="package">GÓI ƯU ĐÃI TIỆC CƯỚI TỪ (40+ BÀN)</div>
+                        <div class="page1-1 content-page1-1">
+                            <div>
+                                <p>Trung tâm tiệc cưới H&N hân hạnh mang đến khách hàng nhiều gói ưu đãi tiệc cưới hấp dẫn, không gian sảnh tiệc cưới được bày trí một cách sang trọng, tinh tế, có công suất từ 100 Khách đến hơn trên 700 Khách. Trang thiết bị âm thanh, ánh sáng, màn hình LED hiện đại, cùng đội ngũ nhân viên chuyên nghiệp.<br>
+                                Hãy liên hệ hôm nay, H&N sẽ cùng bạn lên kế hoạch thật chi tiết, chu toàn cho ngày trọng đại nhất trong cuộc đời của đôi bạn.<br>
+                                Gói ưu đãi tiệc cưới dành cho <b>Qúy khách đặt bàn tiệc cưới chính thức từ 40+ bàn:</b></p><br>
+                                <ul>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Xe điện đưa đón</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Gửi xe</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Khăn lạnh</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Phòng trang điểm CD</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Liễn và bút ký tên lưu niệm</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Giá để hình CD - CR</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Thùng đựng tiền mừng</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Trụ hoa lối đi tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan"> Hoa tươi trang trí bàn tiệc tiêu chuẩn</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Tháp ly Champagne và đá khói</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Hai chai Champagne chương trình lễ</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Màn hình Led khai tiệc</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Khánh tiết đón khách</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">MC dẫn chương trình lễ</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Nước ngọt, nước tinh khiết suốt tiệc</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Vũ đoàn khai tiệc 6 người</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Backdrop hoa lụa chụp hình</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Ban nhạc điện tử tiêu chuẩn (4 người)</li>
+                                    <li><img src="img/nhan.png" alt="" class="nhan">Bàn ăn thử 10 người</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page1-1">
+                            <img src="img/goitiec4.jpeg" alt="Gói 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-fixed1">
+            <div class="contact-fixed2">
+                <a class="item-footer" href="">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="text-footer2">Gọi tư vấn ngay</span>
+                </a>
+                <a class="item-footer" href="">
+                    <i class="far fa-envelope"></i>
+                    <span class="text-footer2">Gửi email</span>
+                </a>
+                <a class="item-footer" href="">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="text-footer2">Nhắn tin qua Facebook</span>
+                </a>
+                <a class="item-footer" href="">
+                    <i class="fab fa-wpforms"></i>
+                    <span class="text-footer2">Yêu cầu gọi lại</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="backtop">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <footer>
+            <div class="footer ">
+                <div class="footer1 flex">
+                    <div class="col50">
+                        <div class="col50-img">
+                            <img src="img/LOGO.jpg" />
+                        </div>
+                        <p>TRUNG TÂM TIỆC CƯỚI VÀ HỘI NGHỊ H&N</p>
+                    </div>
+                    <div class="col30">
+                        <h2>LIÊN HỆ</h2>
+                        <ul>
+                            <li><a href=""><i class="fas fa-map-marker-alt"></i>123 Lý Chính Thắng, Phường 7, Quận 3, Tp.HCM</a></li>
+                            <li><a href=""><i class="fas fa-phone-alt"></i>Hotline: (+84 )774617027</a> </li>
+                            <li><a href=""><i class="far fa-envelope"></i> Email: event@callary.vn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col302">
+                        <h2>CHÍNH SÁCH CỦA H&N</h2>
+                        <ul class="col302">
+                            <li><a href="">Hướng dẫn thanh toán</a></li>
+                            <li><a href="">Chính sách ưu đãi</a></li>
+                            <li><a href="">Chăm sóc khách hàng</a></li>
+                            <li><a href="">Chính sách bảo mật </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer2 flex">
+                    <div class="text-footer">
+                        &copy; H&N Wedding-Events
+                    </div>
+                    <div class="social-media">
+                        <ul class="list-social-media flex">
+                            <li>
+                                <a href="" class="ic1">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="ic2">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="ic3">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="ic4">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="jsTĐ.js"></script>
+</html>

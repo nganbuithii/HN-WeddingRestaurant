@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&N Weeding- Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/home.css">
+    <link href="images/icic3.png" rel="icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" rel="stylesheet"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.flipster/1.1.5/jquery.flipster.min.js" integrity="sha512-YPskov+TTZvojhg9iWYQKa6iRPRm8hko8GBbdV8A8KKMTwp84+jm2K+soYNx3Wf6qQhxb+kn2sjpMZwkWxnD/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body onload="init()" class="preloading">
+        <div class="load">
+            <img src="images/load3.gif">
+        </div>
+    <!-- <header> -->
+    <div class="header1 flex">
+        <div>H&N WEDDING & EVENTS</div>
+        <div class="subheader1 flex">
+            <div class="none"><i class="fa-solid fa-phone"></i>(+84)774617027</div>
+            <div class="none"><i class="fa-solid fa-envelope"></i> event@hn.vn</div>
+            <div><i class="fa-brands fa-font-awesome"></i>Việt Nam</div>
+        </div>
+    </div>
+    <div class="header2">
+        <ul class="menu flex">
+            <li><img src="images/logo.png"></li>
+            <li class="sub"><a href="/index.html">TRANG CHỦ</a></li>
+            <li class="sub"><a href="/ThucDon.html">THỰC ĐƠN</a> </li>
+            <li class="sub"><a href="/KinhNghiemCuoi.html">KINH NGHIỆM </a></li>
+            <li class="sub"><a href="/hoinghi.html">HỘI NGHỊ</a></li>
+            <li class="sub button"><a href="/lienhe.html"><i class="fa-solid fa-calendar-days"></i>LIÊN HỆ</a></li>
+            <li><div id="toggle"><i class="fas fa-bars"></i></div></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="head-img">
+            <img id="img"  src="images/nen.jpg">
+            <div class="subhead-img">
+                <h2>H&N</h2>
+                <h2>H&N</h2>
+            </div>
+            <div class="subhead-des">
+                <p class="text1">Trải nghiệm sự tuyệt vời</p>
+                <a href="/lienhe.html">
+                    <p class="text2">
+                        <i class="far fa-calendar-alt"></i>CƯỚI TRỌN YÊU THƯƠNG CÙNG H&N
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="dieuhuong">
+            <i class="fa-solid fa-angle-left" onclick="prev()"></i>
+            <i class="fa-solid fa-angle-right" onclick="next()"></i>
+        </div>
+    </div>
+     <!-- </header> -->
+    <section>
+        <div class="main-body">
+            <div class="gioithieu">
+                <div class="trangtri-head text"><img src="images/icon.png">GIỚI THIỆU VỀ H&N<img src="images/icon.png"> </div>
+                <div class="gioithieu-item flex">
+                    <div class="gioithieu-img c4-izmir c4-border-cc-3 c4-image-zoom-out c4-gradient-bottom-right" tabindex="0" style="--primary-color: #7303c0; --secondary-color: #ec38bc;"">
+                        <img src="images/gioithieu.jpg" alt="gt">
+                        <figcaption class="c4-layout-top-left">
+                            <div class="c4-reveal-down">
+                              <div>
+                                <h2 style="margin-bottom: 5px;">
+                                  H&N Trung Tâm Tiệc Cưới
+                                </h2>
+                                <p>Giới thiệu về chúng tôi </p>
+                              </div>
+                            </div>
+                          </figcaption>
+                    </div>
+                    <div class="gioithieu-mota">
+                        <p>
+                            Trung tâm Tổ chức Sự kiện và Tiệc cưới H&N được thành lập từ năm 2011 cung cấp cho khách hàng 05 dịch vụ chính, bao gồm: Dịch vụ Tiệc cưới, Dịch vụ Hội Nghị - Hội Thảo, Dịch vụ Tiệc Outside Catering, Dịch vụ Tiệc sinh nhật và Dịch vụ Wedding Planner.
+                            Sở hữu 12 cơ sở tọa lạc tại các vị trí đắc địa trong thành phố Hà Nội và các tỉnh lân cận, đánh dấu thương hiệu với phong cách Trẻ Trung - Thanh Lịch - Hiện Đại.</p>
+                            <span id="dots">...</span>
+                            <span id="more"><p><br>H&N tự hào là điểm đến uy tín bậc nhất trong lĩnh vực tổ chức sự kiện và tiệc cưới.
+                                H&N center luôn lấy khách hàng làm trung tâm và không ngừng nỗ lực để mang đến sự hài lòng cho khách hàng bằng sự chuyên nghiệp, hiệu quả và tận tâm. Được góp phần vào sự thành công trong sự kiện của bạn chính là niềm hạnh phúc và vinh dự của chúng tôi!
+                                H&N - nơi giấc mơ thành hiện thực!</p></span>
+                        </p>
+                        <button onclick="read()" id="btnRead">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <!--uu đãi-->
+            <div class="uudai">
+                <div class="uudai-head text"><img src="images/icon.png">ƯU ĐÃI<img src="images/icon.png"></div>
+                <div class="uudai-describe">Ở H&N, Chất lượng cũng như dịch vụ đều là phương châm hoạt động hàng đầu, và mỗi thời điểm chúng tôi đều có những ưu đãi tốt nhất cho sự kiện của bạn.
+                </div>
+                <div class="uudai-items flex">
+                    <!--item1-->
+                    <div class="uudai-item wow animate__animated animate__flipInX" data-wow-duration="1.5s"
+                        data-wow-delay="0.5s">
+                        <figure class="c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right">
+                            <img src="images/uudai1.jpg" alt="Sample Image" />
+                            <figcaption class="c4-layout-bottom-left">
+                                <div class="c4-reveal-right c4-delay-100">
+                                    <p>Không còn phải lăn tăn mơ hồ về chi phí tiệc cưới nữa, đây là thời điểm tốt nhất trong năm 2022 để lên kế hoạch tổ chức ngay tiệc cưới nếu bạn muốn:</p>
+                                    <p>* Một lễ cưới hoành tráng</p>
+                                    <p> * Một địa điểm cưới nằm trong Top 10 tại TP HCM</p>
+                                    <p>*Một thực đơn chất lượng và đủ đầy</p>
+                                    <p>*Trọn gói FREE-FLOW thức uống suốt tiệc- an tâm đãi khách</p>
+                                    <p>- ĐẶC BIỆT nhất là giá bàn tiệc cưới tốt nhất năm 2022 KHÔNG TĂNG GIÁ và TẶNG 1,2 TRIỆU/BÀN bao gồm toàn bộ nước uống, dịch vụ và thực đơn.</p>
+                                </div>
+                            </figcaption>
+                            <div class="ribbon"><p>NEW</p></div>
+                        </figure>
+                    </div>
+                    <!--item2-->
+                    <div class="uudai-item wow animate__animated animate__flipInX" data-wow-duration="1.5s"
+                        data-wow-delay="0.5s">
+                        <figure class="c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right">
+                            <img src="images/uudai2.jpg" alt="Sample Image" />
+                            <figcaption class="c4-layout-bottom-left">
+                                <div class="c4-reveal-right c4-delay-100">
+                                    <p>Những món quà Xuân tuyệt vời dành cho các cặp đôi đang yêu và sắp cưới vào năm 2022 tại H&N bao gồm:</p>
+                                    <p> * Trang trí khu vực đón khách với Backround chụp hình và Bàn trang trí hoa tươi được thiết kế riêng ấn tượng</p>
+                                    <p> * Tài trợ 100% phí phục vụ</p>
+                                    <p>* Trang trí sảnh cưới toàn diện bằng hoa tươi không phát sinh chi phí</p>
+                                    <p> * Uống Bia Free-Flow suốt tiệc</p>
+                                    <p> * Nâng cấp bia Heiniken miễn phí</p>
+                                    <p> Ưu đãi tốt cho chương trình lễ cưới- thoải mái chọn lựa không lo ngân sách</p>
+                                </div>
+                            </figcaption>
+                            <div class="ribbon"><p>NEW</p></div>
+                        </figure>
+                    </div>
+                    <!--item3-->
+                    <div class="uudai-item wow animate__animated animate__flipInX" data-wow-duration="1.5s"
+                        data-wow-delay="0.5s">
+                        <figure class="c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right">
+                            <img src="images/uudai3.jpg" alt="Sample Image" />
+                            <figcaption class="c4-layout-bottom-left">
+                                <div class="c4-reveal-right c4-delay-100">
+                                    <p>khi lựa chọn Callary để tổ chức tiệc tất niên, không chỉ khách mời hài lòng, mà doanh nghiệp cũng vui vẻ vì mức chi phí vô cùng phù hợp và xứng đáng.</p>
+                                    <p>#Callary sẽ giúp nâng tầm buổi tiệc tất niên với những ưu đãi dành riêng cho doanh nghiệp:</p>
+                                    <p>một buổi tiệc cuối năm sẽ bao gồm 6 hoạt động chính: Khai mạc; Tổng kết các hoạt
+                                        động của năm cũ; Vinh danh các cá nhân, tập thể xuất sắc; Khai tiệc; Giao lưu
+                                        văn nghệ; Bế mạc</p>
+                                    <p> * Hãy để Callary hỗ trợ buổi tiệc tất niên của bạn trở nên hoàn hảo. </p>
+                                    <p>Chọn H&N – Để buổi tất niên trở thành khoảnh khắc ấn tượng của thương hiệu trong lòng mỗi khách mời.</p>
+                                </div>
+                            </figcaption>
+                            <div class="ribbon"> <p>NEW</p></div>
+                        </figure>
+                    </div>
+                    <!--item4-->
+                    <div class="uudai-item wow animate__animated animate__flipInX" data-wow-duration="1.5s"
+                        data-wow-delay="0.5s">
+                        <figure class="c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right">
+                            <img src="images/uudai4.jpg" alt="Sample Image" />
+                            <figcaption class="c4-layout-bottom-left">
+                                <div class="c4-reveal-right c4-delay-100">
+                                    <p>Với bất kì chương trình hội nghị khách hàng, tiệc tất niên, hay sự kiện của công
+                                        ty, người tổ chức luôn luôn có những tiêu chuẩn nhất định mà địa điểm diễn ra
+                                        phải đáp ứng được. Trong giới tổ chức sự kiện gọi đây là những Tiêu Chuẩn Vàng.
+                                        Nếu không tinh tế lựa chọn sảnh tiệc và địa điểm tổ chức, có thể chương trình
+                                        diễn ra sẽ không hoàn hảo như dự tính ban đầu.Tiêu chuẩn đầu tiên là Sảnh Không
+                                        Vướng Cột Hội trường được thiết kế không cột, tạo không gian rộng rãi và mở rộng
+                                        tầm nhìn.
+                                    </p>
+                                </div>
+                            </figcaption>
+                            <div class="ribbon"> <p>NEW</p></div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!--trang trí-->
+            <div class="trangtri">
+                    <div class="trangtri-head text"><img src="images/icon.png">TRANG TRÍ NỔI BẬT<img src="images/icon.png"> </div>
+                    <div class="trangtri-describe">
+                        Mỗi loài hoa đều có một thông điệp riêng. Nếu bạn là người yêu hoa thì chắc chắn H&N là nơibạn muốn tổ chức đám cưới trong mơ của mình.
+                    </div>
+                    <div class="trangtri-items flex">
+                        <div  class=" trangtri-item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                                <img id="ttmain" src="images/trangtri1.jpg" />
+                                <div class="trangtri-subimg flex">
+                                    <div><img src="images/trangtri2.jpg" alt="trangtri"></div>
+                                    <div><img src="images/trangtri3.jpg" alt="trangtri"></div>
+                                    <div><img src="images/trangtri4.jpg" alt="trangtri" ></div>
+                                    <div><img src="images/trangtri5.jpg" alt="trangtri"></div>
+                                    <div><img src="images/trangtri6.png" alt="trangtri"></div>
+                                    <div><img src="images/trangtri7.jpg" alt="trangtri"></div>
+                                </div>
+                            </div>
+                        <div class="wow trangtri-item animate__animated animate__fadeInDown" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                                <div class="sub-item">
+                                    <h1>L'AMOUR PARFAIT</h1>
+                                    <p> Từ lâu Paris- thủ đô nước Pháp vẫn được biết đến như thành phố của tình yêu và sựlãng mạn. </p>
+                                </div>
+                                <div class="sub-item">
+                                    <h1>CRYSTAL PARADISE</h1>
+                                    <p> Lấy cảm hứng từ những sắc màu lung linh của những viên đá. Chìm đắm trong ánh nến lung linh...
+                                    </p>
+                                </div>
+                                <div class="sub-item">
+                                    <h1>SWEETY </h1>
+                                    <p>Tôi đã không biết bao nhiêu lần hình dung lễ cưới của tôi sẽ như thế nào...</p>
+                                </div>
+                                <div class="sub-item">
+                                    <h1> GLAMOUR PREMIUM</h1>
+                                    <p>Cổ điển – sang trọng Phong cách cổ điển – sang trọng được xem là một xu hướng trang trí được nhiều cặp đôi
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+            <!--sảnh tiệc-->
+            <div class="sanhtiec">
+                <div>
+                    <div class="sanhtiec-head text"><img src="images/icon.png">SẢNH TIỆC<img src="images/icon.png"></div>
+                    <div class="sanhtiec-describe">
+                        H&N mang đến cho bạn những nền tảng tốt đẹp nhất để tạo ra một sự kiện đáng nhớ và ngập tràn
+                        hạnh phúc. 4 sảnh cưới theo sắc màu xuyên suốt vàng TULIP, đỏ ROSE, tím VIOLET và xanh CALLA với
+                        không gian trang nhã tích hợp thiêt bị hiện đại mang đến cho bạn những lựa chọn phù hợp nhất.
+                    </div>
+                    <div class="sanhtiec-items flex">
+                        <div class="sanhtiec-item subsanhtiec wow animate__animated animate__fadeInDown "
+                            data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <div class="sub-sanh-item">
+                                <div><img src="images/sanhcuoi1.jpg" /></div>
+                                <p class="sanhtiec-text">SẢNH TULIP</p>
+                            </div>
+                        </div>
+                        <div class="sanhtiec-item wow animate__animated animate__fadeInDown " data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="sub-sanh-item">
+                                <div><img src="images/sanhcuoi2.jpg" /></div>
+                                <p class="sanhtiec-text">SẢNH ROSE</p>
+                            </div>
+                        </div>
+
+                        <div class="sanhtiec-item wow animate__animated animate__fadeInDown " data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="sub-sanh-item">
+                                <div><img src="images/sanhcuoi3.jpg" /></div>
+                                <p class="sanhtiec-text">SẢNH VIOLET</p>
+                            </div>
+                        </div>
+                        <div class="sanhtiec-item wow animate__animated animate__fadeInDown " data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class=" sub-sanh-item">
+                            <div><img src="images/sanhcuoi4.jpg" /></div>
+                            <p class="sanhtiec-text">SẢNH CALLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="sukien">
+                <div class="trangtri-head text"><img src="images/icon.png">HÌNH ẢNH<img src="images/icon.png"> </div>
+                <div class="sukien-item">
+                    <ul class="menu-sukien"> 
+                        <li data-type="type1">Tiệc Cưới</li>
+                        <li data-type="type2">Tiệc sinh nhật</li>
+                        <li data-type="type3">Tiệc công ty</li>
+                        <li data-type="type4">Tiệc Ngoài Trời</li>
+                        <li data-type="all">Tất cả</li>
+                    </ul>
+                    <h1 class="title">Tất cả</h1>
+                    <div class="content flex">
+                        <img class="type1 all" src="images/sukien-cuoi1.jpg">
+                        <img class="type1 all" src="images/sukien-cuoi2.jpg">
+                        <img class="type1 all" src="images/sukien-cuoi3.jpg">
+                        <img class="type1 all" src="images/sukien-cuoi4.jpg">
+               
+                        <img class="type2 all" src="images/sukien-sn2.jpg">
+                        <img class="type2 all" src="images/sukien-sn4.webp">
+                        <img class="type2 all" src="images/sukien-sn5.jpg">
+                        <img class="type2 all" src="images/sukien-sn6.webp">
+
+                        <img class="type3 all" src="images/sukien-sk1.jpg">
+                        <img class="type3 all" src="images/sukien-sk3.jpg">
+                        <img class="type3 all" src="images/sukien-sk4.jfif">
+                        <img class="type3 all" src="images/sukien-sk6.jpg">
+
+                        <img class="type4 all" src="images/sukien-ngoai1.jpg">
+                        <img class="type4 all" src="images/sukien-ngoai2.jpg">
+                        <img class="type4 all" src="images/sukien-ngoai3.jpg">
+                    </div>
+                </div>
+            </div>
+            <!--feedback-->
+            <div class="feedback">
+                <div class="feedback-head text">
+                    <img src="images/icon.png">CHÚNG TÔI YÊU H&N<img src="images/icon.png">
+                </div>
+                <div class="feedback-describe">Khách hàng nói gì về H&N </div>
+                <div class="feedback-item">
+                    <div class="mySlides" >
+                        <div><img src="images/fb1.jpg" alt="avt"/></div>
+                        <div><h4>Nguyễn Hải Minh</h4></div>
+                        <div><p>Khách Hàng</p></div>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            Đám cưới mình ở H&N cách đây hơn 1 năm rồi. Rất hài lòng với dịch vụ của H&N. Cám ơn sale đã tư vấn rất nhiệt tình,chính xác và linh hoạt bày trí cho mình
+                            một lễ cưới như ý. Mỗi món ăn trong menu đều có thể mô tả chính xác vị của nó và tư vấn phù hợp với đối tượng khách nào. Mình thật sự rất bất ngờ Khách mời của mình đều khen đồ ăn ngon. Nhân viên phục vụ cũng rất chu đáo và tận tình. Mình vẫn rất vui và hài lòng vì đã
+                            lựa chọn H&N.
+                        </div>
+                        <div class="quotes">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div><img src="images/fb2.jpg" alt="avt"/></div>
+                        <div><h4>Hoàng Thảo My</h4></div>
+                        <div><p>Khách Hàng</p></div>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            Mới đi tiệc ở Callary về, đường 1 chiều nên phải chú ý không là đi lố, mà mặt tiền nhà hàng to lắm, nên chỉ cần để ý là không sao. Mỗi tầng 1 sảnh nên khá riêng tư, hôm đó nhà mình đãi 25 bàn vẫn thấy khá thoải mái. Đồ ăn ngon và nóng hổi, thích món gà nướng với bánh tráng miệng nhất, chua chua ngọt ngọt rất ngon.
+                        </div>
+                        <div class="quotes">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div><img src="images/fb3.jpg" alt="avt"/></div>
+                        <div>
+                            <h4>Mai Thảo Vân</h4></div>
+                        <div><p>Khách Hàng</p></div>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            Mình dự đám cưới ở l5, sảnh violet, màu tím lạ và rất đẹp, nghe nói dạo này tím đang là trend  Mỗi tầng có 1 sảnh riêng nên rất private luôn. 1 sảnh có thể chứa tầm 35 bàn là max, còn 25 bàn là vừa đẹp, đủ đi lại, ấm cúng. Thực đơn món nào cũng ngon, vừa á vừa âu, ăn rất ngon miệng. Nhân viên phục vụ nhanh nhẹn, lịch sự, lễ phép, chuyên nghiệp, gọi là có và làm ngay, châm nước liên tục, bàn m nhậu nhiều nhưng cũng k bị thiếu bia. Nói chung mình khá thích, tưởng sảnh nhỏ sẽ chật chội nhưng lại khá ấm cúng.Sảnh đẹp, trang trí đơn giản nhưng hài hòa.
+                        </div>
+                        <div class="quotes">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="mySlides" >
+                        <div><img src="images/fb5.jpg" alt="avt"/></div>
+                        <div>
+                            <h4>Ngô Đình Thắng</h4></div>
+                        <div><p>Khách Hàng</p></div>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            Thức ăn ngon, nhiều.. giá khá hợp lí so với mặt bằng Quận 3 .. bãi giữ xe rộng rãi và đặc biệt là free  .. phục vụ thân thiện .. Nói chung trừ các nhà hàng Luxury thì theo mình Callary khá ổn để đặt niềm tin cho ngày trọng đại..
+    Cảm ơn các bạn Callary..
+                        </div>
+                        <div class="quotes">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="mySlides" >
+                        <div><img src="images/fb6.jpg" alt="avt"/></div>
+                        <div><h4>Hồ Ngọc Hân</h4></div>
+                        <div><p>Khách Hàng</p></div>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            Nhà hàng callary món ăn ngon và no. Nhân viên nhiệt tình, thân thiện. Sảnh đẹp. Rất vui vì đã tổ chức tiệc cưới tại đây. Đặt biệt nhân viên sale . Xin cám ơn nhà hàng.
+                        </div>
+                        <div class="quotes">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div><img src="images/fb4.jpg" alt="avt"/></div>
+                        <div><h4>Nguyên Thị Cẩm Tú</h4></div>
+                        <div><p>Khách Hàng</p></div>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            Mình vừa mới dự đám cưới của bạn t7 28/7 xong. Đầu tiên bước vào phải nói là rất đẹp, nhìn bên ngoài nhỏ nhưng bên trong lại khá sang trọng, dc trang trí hoa tươi nữa (ít chỗ nào dc vậy). Sẽ tham khảo đặt ở đây nếu mình cưới (giờ đang ế)   
+                            •	Thực đơn ngon miệng
+                        </div>
+                        <div class="quotes">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="cc">
+                        <div  onclick="plusDivs(-1)">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div  onclick="plusDivs(1)">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="dot">
+                            <span class=" demo  " onclick="currentDiv(1)"> <i class="fa-solid fa-circle-notch"></i> </span>
+                            <span class="demo  " onclick="currentDiv(2)"><i class="fa-solid fa-circle-notch"></i> </span>
+                            <span class=" demo  " onclick="currentDiv(3)"><i class="fa-solid fa-circle-notch"></i></span>
+                            <span class=" demo  " onclick="currentDiv(4)"><i class="fa-solid fa-circle-notch"></i></span>
+                            <span class=" demo  " onclick="currentDiv(5)"><i class="fa-solid fa-circle-notch"></i></span>
+                            <span class=" demo  " onclick="currentDiv(6)"><i class="fa-solid fa-circle-notch"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--box cmt-->
+            <div class="binhluan">
+                    <div class="comment">
+                        <input type="text" id="cmt" placeholder="Hãy viết gì đó...">
+                        <button type="button" name="button" id="cancel"> Cancel</button>
+                        <button type="button" name="button" id="comment"> Comment</button>
+                    </div>
+                    <div class="box-comment">
+                        <div class="box"></div>
+                        <button type="button" name="button" id="delete"> Delete</button>
+                    </div>
+            </div>
+            <!--tin tức-->
+            <div class="tinmoi">
+                <div class="tinmoi-head text">
+                    <img src="images/icon.png">TIN MỚI<img src="images/icon.png">
+                </div>
+                <div class="timmoi-describe">
+                    Xem các tin mới từ H&N
+                </div>
+                <div class="tinmoi-items flex">
+                    <!--tin1-->
+                    <div class="tinmoi-item flex  wow animate__animated animate__backInUp" data-wow-delay="0.5s">
+                        <div class="sub-tinmoi1"><img src="images/tinmoi1.jpg" /></div>
+                        <!--mô tả-->
+                        <div class="sub-tinmoi2">
+                            <h2>Cưới Trọn Yêu Thương</h2>
+                            <p><i class="far fa-clock"></i> 15/06/2022</p>
+                            <p>
+                                CƯỚI TRỌN YÊU THƯƠNG CÙNG H&N Không còn phải lăn tăn mơ hồ về chi phí tiệc cưới nữa,
+                                đây là thời điểm tốt nhất trong năm 2022 để lên kế hoạch tổ chức ngay tiệc cưới nếu bạn
+                                muốn: Một lễ cưới hoành tráng Một địa điểm cưới nằm trong Top 10 tại TP [&hellip;]
+                            </p>
+                        </div>
+                    </div>
+                    <!--tin2-->
+                    <div class="tinmoi-item flex  wow animate__animated animate__backInUp" data-wow-delay="0.5s">
+                        <div class="sub-tinmoi1"><img src="images/tinmoi2.jpg" /></div>
+                        <div class="sub-tinmoi2">
+                            <h2>YÊU &#038; CƯỚI</h2>
+                            <p><i class="far fa-clock"></i> 23/11/2022</p>
+                            <p>
+                                Trọn vẹn yêu thương cùng H&N Mùa xuân là mùa bắt đầu của một năm, cũng là mùa đẹp
+                                nhất trong năm vì mang đến cho con người không khí ấm áp, vui tươi nhất. Xuân về cây cối
+                                đâm chồi nảy lộc, nhiều điều may mắn đón chờ. Mùa xuân thiên nhiên chỉ đến [&hellip;]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tinmoi-item flex  wow animate__animated animate__backInUp" data-wow-delay="0.5s">
+                        <div class="sub-tinmoi1"><img src="images/tinmoi3.jpg" /></div>
+                        <div class="sub-tinmoi2">
+                            <h2>Đặt Tiệc Cưới Nhà Hàng H&N Đơn Giản Và Tiết Kiệm</h2>
+                            <p><i class="far fa-clock"></i> 15/06/2022</p>
+                            <p>
+                                Vào ngày cưới, mối bước đi tiến trình của buổi lễ, chắc hẳn cô dâu chú rể và tất cả mọi người đều muốn trải qua một ngày trọng đại thật trọn vẹn và viên mãn.Không chỉ là những trang phục lộng lẫy, trang trí đẹp hà hòa, mà buổi tiệc cưới cũng là một [&hellip;]
+                            </p>
+                        </div>
+                    </div>
+                    <!--tin4-->
+                    <div class="tinmoi-item flex  wow animate__animated animate__backInUp" data-wow-delay="0.5s">
+                        <div class="sub-tinmoi1"><img src="images/tinmoi4.jpg" /></div>
+                        <div class="sub-tinmoi2">
+                            <h2>Tổ Chức Tiệc Cưới Ngoài Trời Vào Mùa Mưa Cần Lưu Ý Điều Gì?</h2>
+                            <p><i class="far fa-clock"></i> 17/02/2022</p>
+                            <p>
+                                Mùa hè là mùa đẹp nhất trong bốn mùa xuân hạ thu đông, không chỉ là thời điểm mùa cưới
+                                nở rộ , trái cây đua nở, đ Mùa hè là mùa đẹp nhất trong bốn mùa xuân hạ thu đông, không
+                                chỉ là thời điểm mùa cưới nở rộ , trái cây đua nở, [&hellip;]
+                            </p>
+                        </div>
+                    </div>
+                    <!--tin5-->
+                    <div class="tinmoi-item flex  wow animate__animated animate__backInUp" data-wow-delay="0.5s">
+                        <div class="sub-tinmoi1"><img src="images/tinmoi5.jpg" /></div>
+                        <div class="sub-tinmoi2">
+                            <h2>Trang trí tiệc cưới tại nhà đơn giản và bắt mắt</h2>
+                            <p><i class="far fa-clock"></i> 15/06/2022</p>
+                            <p>
+                                Lựa chọn địa điểm tổ chức tiệc cưới là một quyết định lớn và khiến bạn đắn đo nhất.
+                                Không chỉ là địa điểm phù hợp cho số lượng mình đặt ra mà còn ảnh hưởng tới giá trị và
+                                ảnh hưởng quy mô của bạn. Bên cạnh nhà hàng sang trọng thì tổ chức [&hellip;]
+                            </p>
+                        </div>
+                    </div>
+                    <!--tin6-->
+                    <div class="tinmoi-item flex  wow animate__animated animate__backInUp" data-wow-delay="0.5s">
+                        <div class="sub-tinmoi1"><img src="images/tinmoi6.jpg" /></div>
+                        <div class="sub-tinmoi2">
+                            <h2> Kinh nghiệm tổ chức đám cưới tiết kiệm tại nhà</h2>
+                            <p><i class="far fa-clock"></i> 18/10/2022</p>
+                            <p>
+                                Sắc màu đỏ rosa mang đến không gian hạnh phúc bất tậnĐám cưới là một sự kiện mang tính
+                                chất trọng đại, mỗi một người đều trải qua trừ độc thân. Vì thế không những bạn mà gia
+                                đình bạn rất cần nhiệu thời gian &nbsp;chuẩn bị kĩ lưỡng cũng như một khoản đầu tư
+                                [&hellip;]
+                            </p>
+                        </div>
+                    </div>
+                    <!--đóng item-->
+                </div>
+                <!--đóng items-->
+            </div>
+            <!--hệ thống cơ sở-->
+            <div class="hethong">
+                <div class="feedback-head text">
+                    <img src="images/icon.png">HỆ THỐNG CƠ SỞ<img src="images/icon.png">
+                </div>
+                <div class="hethong-container flex">
+                    <div class="hethong-item wow animate__zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                        <img src="images/coso1.jpg">
+                        <h2>TRẦN ĐĂNG NINH</h2>
+                    <p>40 Hàng Cót, Hàng Mã, Quận Hoàn Kiếm, Hà Nội</p>
+                    </div>
+                    <div class="hethong-item wow animate__zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                        <img src="images/coso2.jpg">
+                        <h2>QUÁN SỨ</h2>
+                        <p>Số 586 Cách Mạng, Thành phố Thái Nguyên</p>
+                    </div>
+                    <div class="hethong-item wow animate__zoomIn" style="visibility: visible; animation-name: zoomIn;"> 
+                        <img src="images/coso3.png">
+                        <h2>HÀ ĐÔNG </h2>
+                        <p>2 Phố Lãng Yên, Bạch Đằng, Quận Hai Bà Trưng, Hà Nội</p>
+                    </div>
+                    <div class=" hethong-item wow animate__zoomIn" style="visibility: visible; animation-name: zoomIn;"> 
+                        <img src="images/coso4.jpg">
+                        <h2>LÃNG YÊN </h2>
+                        <p>489 Hoàng Quốc Việt, Quận Cầu Giấy, Hà Nội</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact cố định-->
+    <div class="contact-fixed1">
+        <div class="contact-fixed2">
+            <a class="item-footer" href="">
+                <i class="fas fa-phone-alt"></i>
+                <span class="text-footer2">Gọi tư vấn ngay</span>
+            </a>
+            <a class="item-footer" href="">
+                <i class="far fa-envelope"></i>
+                <span class="text-footer2">Gửi email</span>
+            </a>
+            <a class="item-footer" href="">
+                <i class="fab fa-facebook-f"></i>
+                <span class="text-footer2">Nhắn tin qua Facebook</span>
+            </a>
+            <a class="item-footer" href="">
+                <i class="fab fa-wpforms"></i>
+                <span class="text-footer2">Yêu cầu gọi lại</span>
+            </a>
+        </div>
+        <div class="btn-back-to-top">
+            <a href="javacript:;" id="gototop"><i class="fas fa-angle-up"></i></a>  
+        </div>
+    </div>
+    <footer>
+        <div class="footer ">
+            <div class="footer1 flex">
+                <div class="col50">
+                    <div class="col50-img">
+                        <img src="img/LOGO.jpg" />
+                    </div>
+                    <p>TRUNG TÂM TIỆC CƯỚI VÀ HỘI NGHỊ H&N</p>
+                </div>
+                <div class="col30">
+                    <h2>LIÊN HỆ</h2>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i>123 Lý Chính Thắng, Phường 7, Quận 3, Tp.HCM</a></li>
+                        <li><a href=""><i class="fas fa-phone-alt"></i>Hotline: (+84 )774617027</a> </li>
+                        <li><a href=""><i class="far fa-envelope"></i> Email: event@callary.vn</a></li>
+                    </ul>
+                </div>
+                <div class="col302">
+                    <h2>CHÍNH SÁCH CỦA H&N</h2>
+                    <ul class="col302">
+                        <li><a href="">Hướng dẫn thanh toán</a></li>
+                        <li><a href="">Chính sách ưu đãi</a></li>
+                        <li><a href="">Chăm sóc khách hàng</a></li>
+                        <li><a href="">Chính sách bảo mật </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer2 flex">
+                <div class="text-footer">
+                    &copy; H&N Wedding-Events
+                </div>
+                <div class="social-media">
+                    <ul class="list-social-media flex">
+                        <li>
+                            <a href="" class="ic1">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="ic2">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="ic3">
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="ic4">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Prdisplay=swap');
+
+body{
+    overflow-x: hidden;
+}
+:root{
+    --fontWedding: 'Great Vibes', cursive;
+    --colorText:#64463C;
+    --colorYL:rgba(248, 200, 8, 0.4);
+    --colorButton:#607EAA;
+    --colorBorder:#e7b534;
+    --text-head1:#8d7535;
+    --color-head2:#A0522D;
+}
+/*header 1*/
+.header1{
+    background-color:white;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+}
+.subheader1{
+    width: 40%;
+    justify-content: flex-end;
+}
+.header1 > div{
+    color:var(--text-head1);
+    font-size: 15px;
+}
+.subheader1 >div{
+    color:var(--text-head1);
+    padding: 5px  15px;
+    font-size: 15px;
+}
+.subheader1 >div > i{
+    color:var(--text-head1);
+    padding: 0 5px;
+}
+/*header 2*/
+.header2 {
+   background: linear-gradient(90deg, rgba(114,6,6,1) 0%, rgba(56,13,40,1) 33%, rgba(206,160,48,1) 66%, rgba(51,53,3,1) 100%);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 18px;
+}
+#toggle{
+    visibility: hidden;;
+}
+ul.menu {
+    list-style-type: none;
+    align-items: center;
+}
+ul.menu>li {
+    text-align: center;
+}
+ul.menu>li>a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.button {
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: center;
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+    background-image: linear-gradient(to right, #D2691E, gold,orange,#D2691E, #E9967A,#DC143C);
+}
+.button:hover {
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+}
+.menu a {
+    position: relative;
+  }
+.menu a:before,
+.menu a:after {
+    position: absolute;
+    transition: all 0.35s ease;
+  }
+  .menu a:before {
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #fbb03b;
+  }
+  .menu a:after {
+    position: absolute;
+  }
+  .menu a:hover:before {
+    opacity: 1;
+    width: 70%;
+  }
+ .menu>li:hover>a{
+    color:#fbb03b;;
+  }
+  .menu>li:nth-child(6) a:before {
+    background-color: transparent;
+  }
+  ul.menu>li:nth-child(6)>a>i {
+    color: white;
+    padding-right:5px;
+}
+ul.menu>li:nth-child(6)>a {
+    color: white;
+}
+/*end head2*/
+img{
+    border-radius: 10px;
+}
+.flex{
+    display: flex;
+}
+/* header{
+    width: 100%;
+    height: 750px;
+    background: url(img/header.jpg) center /cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+} */
+.text-on-img {
+    width: 60%;
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    /* z-index: 2; */
+    padding: 20px;
+    text-align: center;
+    font-size: 5rem;
+    font-style: italic;
+    /* display: block; */
+    /* max-width: 1000px; */
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider-header{
+    width: 100%;
+    height: 650px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.btn-header{
+    font-size: 40px;
+    color:rgba(128, 124, 124, 0.5);
+    position: absolute;
+    top: 45%;
+    padding-left: 18px;
+    z-index: 100;
+}
+.btn-header i:last-child{
+    position: relative;
+    left: 1390px;
+}
+.btn-header:hover{
+    color: #425754;
+}
+.slider-header-main{
+    width: 100%;
+    height: 100%;
+    transition: all 5s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+.slider-item{
+    width: 100%;
+    flex: 1 0 100%;
+    position: relative;
+}
+.slider-item > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* thực đơn tiệc cưới */
+/* .head-cont{
+    font-size: 40px;
+    color: aliceblue;
+}
+.head-cont2{
+    font-weight: bold;
+} */
+/* thực đơn tự chọn */
+.content-heading{
+    text-align: center;
+    font-size: 60px;
+    font-family: var(--fontWedding);
+    width: 100%;
+    background-color: #FAFAEB;
+    padding: 20px 0 40px 0;
+    color: var(--colorText);
+}
+/* thanh điều hướng */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:-20px;
+    flex-wrap: wrap;
+}
+.nav .item{
+    width: 25%;
+    text-align: center;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.btnctrl{
+    position: relative;
+}
+.btnctrl a{
+    padding: 16px;
+    display:block;/* làm thẻ a chiếm full div chứa nó */
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    color: var(--colorText);
+}
+/* tạo lớp giả trước nút đó */
+.btnctrl::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e5db203e;
+    left: -100%;
+    top: 0;
+    transition: all 0.5s ease-in-out; 
+    z-index: 1;
+}
+/*khi hover vô thì lớp giả đó chạy về left 0 */
+.btnctrl:hover::before{
+    left: 0;
+}
+.btnctrl:hover a {
+    color: rgba(234, 13, 13, 0.975);
+}
+/* nội dung của từng món */
+.food{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.food .section{
+    font-size: 40px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: cornsilk;
+    margin-top: 50px;
+    font-family: var(--fontWedding);
+    border: 2px solid #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+/* món khai vị-chính */
+.item-child{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+/* nội dung của từng cái */
+.cont-item-child{
+    width: 33.33%;
+    padding: 12px;
+}
+.cont-item-child img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.cont-item-child img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* nội dung dưới ảnh */
+.cont-item-child div{
+    font-size: 20px;
+    color: var(--colorText);
+}
+.animate-charcter
+{
+   /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #62568c 0%,
+    #7309e5 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+      font-size: 35px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.section2{
+    height: 650px;
+    display: block;
+    background: url(img/bg_thucdon-tc.jpg) center/cover;
+    position: relative;
+}
+.section2 .menu-introduction{
+    width: 545px;
+    height: 275px;
+    background: url(img/imgCuoi.jpg);
+    padding: 50px 40px;
+    position: absolute;
+    top: 190px;
+    left: 190px;
+    z-index: 1;
+    --animate-duration: 2s;
+}
+/* ẨM THỰC - CULINARY */
+.CULINARY{
+    width: 130%;
+    margin-left: -15%;
+    height: 560px;
+    background-color: #f2f2ed;
+    position: relative;
+}
+.culinary1{
+    font-size: 35px;
+    text-align: center;
+    padding:50px 0;
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+.title-word-1 {
+    --color-1: #f45b09;
+    --color-2: #053a52;
+    --color-3: #f3120e;
+}
+.title-word-2 {
+    --color-1: #f6a800;
+    --color-2: #425754;
+    --color-3: #03363a;
+}
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+figure {
+    border: 5px solid #fff;
+}
+.culinary2 .c4-izmir > img{
+    width: 400px;
+    height: 300px;
+}
+figcaption h3{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+figcaption p{
+    line-height: 1.4;
+    text-align: justify;
+}
+/* css cho chữ THỰC ĐƠN trong phần giữa */
+.section2 .menu-introduction h1{
+    font-size: 56px;
+    text-shadow: 3px 3px 3px rgb(50, 205, 135);
+}
+.section2 .menu-introduction p{
+    text-shadow: 3px 3px 3px yellowgreen;
+    text-align: justify;
+}
+.section2 .imgOfMenu{
+    width: 700px;
+    height: 500px;
+    background-color: #FAFAEB;
+    position: absolute;
+    top: 85px;
+    left: 45%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 4 hình nằm dưới phần giới thiệu thực đơn */
+.section2 .imgOfMenu img{
+    width: 50%;
+    height: 50%;
+    padding: 12px;
+    --animate-duration: 2s;
+}
+.img24{
+    padding-left: 0 !important;
+}
+.img34{
+    padding-top: 0 !important;
+    --animate-duration: 1s;
+}
+/* món súp và món tráng miệng */
+.waviy {
+    position: relative;
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: var(--colorText);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+.section3 .cont-item-child2{
+    width: 50%;
+    height: 340px;
+    background-color: #FAFAEB;
+    margin: 12px;
+    
+}
+.section3{
+    margin-bottom: 30px;
+}
+.cont-item-child2 img{
+    transition: all 0.3s ease-in-out;
+}
+.cont-item-child2 img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#item-3, #item-4{
+    justify-content: center;
+    width: 100%;
+}
+.section3 .cont-item-child2 div div{
+    width: 50%;
+}
+#item-3 div div img, #item-4 div div img{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+/* gói tiệc cưới của vạn lộc phát*/
+.wedding-package{
+    width: 100%;
+    height: 630px;
+    background-color: #f2f2ed;
+    position: relative;
+}
+.wedding-package >p{
+    font-size: 66px;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    color: var(--colorText);
+    font-family: var(--fontWedding);
+}
+.slider-package{
+    width: 1100px;
+    height: 440px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.slider-package:hover .package{
+    background: linear-gradient(to right,#b67f20 0,#fbeb75 49%,#b67f20 100%);
+}
+.slider-package-main{
+    /* width: 1100px;
+    height: 440px; */
+    width: 100%;
+    height: 100%;
+    transition: all 3s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+.btn-package{
+    font-size: 40px;
+    color:rgba(128, 124, 124, 0.1);
+    position: absolute;
+    top: 50%;
+    padding-left: 18px;
+    z-index: 100;
+}
+.btn-package i:last-child{
+    position: relative;
+    left: 975px;
+}
+.btn-package:hover{
+    color: #425754;
+}
+.wedding-package .page{
+    /* width: 1110px;  */
+    width: 100%;
+    height: 440px;
+    background-color: aliceblue;
+    margin:0 auto;
+    display: flex;
+    flex: 1 0 100%;
+    position: relative;
+}
+.page > .package{
+    position: absolute;
+    left: 300px;
+    top: 30px;
+    background-color: var(--colorBorder);
+    padding: 10px 15px;
+    border: 3px solid #fff;
+    color: #fff;
+}
+.wedding-package .page .page1-1{
+    width: 50%;
+    /* chia làm 2 nửa */
+}
+
+.page1-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-page1-1{
+    padding: 90px 30px 0;
+}
+.content-page1-1 p{
+    font-size: 16px;
+    text-align: justify;
+}
+.content-page1-1 > div{
+    overflow-y: scroll;/*thanh trượt */
+     height: 100%;
+}
+.content-page1-1 li{
+    line-height: 1.6;
+    list-style-type: none;
+}
+.content-page1-1 li img{
+    display: inline;
+    /* inline cho các li tràn lên */
+    width: 15px;
+    height: 15px;;
+}
+.nhan{
+    width: 15px;
+    height: 15px;
+}
+
+/* KINH NGHIỆM CƯỚI */
+
+/* .header-news{
+    width: 100%;
+    height: 750px;
+    background: url(img/BG_KNC.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+} */
+section{
+    margin: 40px 0;
+}
+.section-news{
+    /* width: 900px; */
+    width: 60%;
+    height: 500px;
+    margin-left: 125px;
+    /* ***** */
+    /* margin-top: 200px; */
+}
+.item-global{
+    width: 50%;
+    border: 1px solid #d9d6cf;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.item-global:hover{
+    border: 1px solid var(--colorBorder);
+}
+.item-box{
+    padding: 10px;
+    overflow: hidden;
+}
+.item-box > div p{
+    line-height: 1.6;
+}
+/* .item-box > div > button{
+    width: 80px;
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    border-radius: 6px;
+    background-color:var(--colorButton);
+    color: #fff;
+    border-color: var(--colorButton);
+}
+.item-box > div > button:hover{
+    background-color: #1C3879;
+} */
+.item-box > div p:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.item-global > div >div > img{
+    max-width: 100%;
+    margin-bottom: 8px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.item-couple-news{
+    margin-bottom: 20px;
+    --animate-duration: 2s;
+}
+.item-global > div > div:hover > img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.modal-news{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-items: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    display: none;
+}
+.modal-container{
+    width: 80%;
+    height: 500px;
+    margin: auto auto;
+    background-color: #F0EBE3;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+.modal-content{
+    height: 100%;
+}
+.modal-close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-close:hover{
+    background-color: red;
+}
+.modal-img{
+    width: 40%;
+}
+.modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modal-text{
+    width: 70%;
+    /* margin-left: 6%; */
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.open{
+    display: flex !important;
+}
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* phần bên phải của kinh nghiệm cưới */
+.section-right{
+    width: 350px;
+    margin-bottom: 200px;
+    margin-left: 25px;
+}
+.search{
+    border: 1px solid var(--colorYL);
+    border-radius: 5px;
+}
+.search input{
+    width: 90%;
+    height: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.search button{
+    width: 10%;
+    height: 30px;
+    border: none;
+    background-color: var(--colorYL);
+}
+.search button:hover{
+    background-color: var(--color-head2)
+}
+.pageFB{
+    margin-top: 50px;
+    border-radius: 10px;
+    border:1px solid var(--colorBorder);
+    width: 100%;
+    height: 700px;
+    padding: 15px;
+    position: relative;
+}
+.pageFB > h1{
+    color: #c69930;
+    font-size: 24px;
+    text-align: center;
+}
+.pageFB h1:after{
+    content: '';
+    width: 50px;
+    background: #c69930;
+    height: 1px;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+}
+.CATEGORY{
+    height: 500px !important;
+}
+.content-category{
+    padding:40px 5px;
+    margin-top: 10px;
+}
+.category{
+    width: 100%;
+    margin:15px auto;
+    background-color: #e3e3e3;
+    text-align: center;
+}
+.category:hover{
+    background-color: var(--colorBorder);
+    cursor: pointer;
+}
+.category > a{
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 12px 10px;
+}
+.pageFBchild{
+    width: 100%;
+    height: 110px;
+    margin-top: 35px;
+    border:1px solid #e7b534;
+    background-image:  linear-gradient(to bottom, rgba(16, 13, 13, 0.7), rgba(0, 0, 0, 0)),url(img/knc9.jpg);
+    background-size: contain;
+    position: relative;
+}
+.logo{
+    background-image: url(img/LOGO.jpg);
+    background-size: contain;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    border: 2px solid #c69930;
+    left: 7px;
+    top: 7px;
+}
+.pageFBchild > a{
+    position: absolute;
+    top: 7px;
+    left: 60px;
+    color: #fff;
+}
+.post{
+    overflow: scroll;
+    height: 500px;
+}
+/* CALENDAR */
+
+/* .slider-header{
+    width: 100%;
+    height: 750px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.btn-header{
+    font-size: 40px;
+    color:rgba(128, 124, 124, 0.5);
+    position: absolute;
+    top: 50%;
+    padding-left: 18px;
+}
+.btn-header i:last-child{
+    position: relative;
+    left: 1390px;
+}
+.btn-header:hover{
+    color: #425754;
+}
+.slider-header-main{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+.slider-item{
+    width: 100%;
+    flex: 1 0 100%;
+}
+.slider-item > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.slider-calendar{
+    width: 100%;
+    height: 500px;
+    margin-top: 45px;
+    position: relative;
+    overflow: hidden;
+}
+.slider-calender-main{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s linear;
+}
+.slider-calender-main > div>h1{
+    text-align: center;
+}
+.slider-calender-main > div > img{
+    width: 100%;
+}
+.btncontrol i:last-child{
+    position: relative;
+    left: 260px;
+}
+.btncontrol{
+    font-size: 25px;
+    color:rgba(128, 124, 124, 0.5);
+    position: absolute;
+    top: 36.5%;
+    padding-left: 18px;
+    display: none;
+}
+.slider-calendar:hover .btncontrol{
+    display: block;
+}
+.month{
+    /* height: 100%; */
+    width: 100%;
+    flex: 1 0 100%;
+    user-select: none;
+}
+.service{
+    width: 100%;
+    background-color:#f3f2f0 ;
+    margin-top: 70px;
+}
+.service .content-intro > h1{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 72px;
+    font-weight: lighter;
+}
+.service .content-intro > p{
+    text-align: center;
+    line-height: 1.4;
+    padding:0 10% ;
+    margin: 0 auto;
+    font-size: 17px;
+    color:#252a2b;
+}
+.box-intro{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.box-intro p{
+    line-height: 1.4;
+}
+.img-intro> .c4-izmir > img{
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.img-intro figure{
+    width: 25%;
+}
+/* entertaiment */
+.entertaiment{
+    margin: 70px 0;
+    background-color: #FCF8E8;
+}
+.entertaiment-child{
+    --animate-duration: 3s;
+}
+.entertaiment-text {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.entertaiment-img{
+    width: 50%;
+}
+.entertaiment-img > div{
+    width: 50%;
+    border-right: 1px solid var(--colorBorder);
+}
+.entertaiment-img > div img:hover{
+    margin-top: -15px;
+    cursor: pointer;
+}
+.entertaiment-img >div > img{
+    width: 100%;
+    padding:20px 3px;
+    transition: all 0.3s ease-in-out;
+}
+.entertaiment-contOfimg{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.modal-entertaiment{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-items: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    display: none;
+}
+.modal-enter-container{
+    width: 80%;
+    height: 500px;
+    margin: auto auto;
+    background-color: #F0EBE3;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+.modal-close2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-close2:hover{
+    background-color: red;
+}
+.entertaiment-child2{
+    --animate-duration: 3s;
+}
+.entertaiment-child2 div{
+    width: 25%;
+    border-right: 1px solid var(--colorBorder);
+}
+.entertaiment-child2 div > img{
+    width: 100%;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.entertaiment-child2 div > img:hover{
+    margin-top: -15px;
+    cursor: pointer;
+}
+.wedding-film{
+    width: 100%;
+    /* background-color: #6b7968; */
+    background-color: #CEE5D0;
+}
+.wedding-film h1{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 52px;
+    font-weight: lighter;
+}
+.cont-film{
+    flex-wrap: wrap;
+}
+.cont-film > img{
+    width: 33.3333%;
+    padding:0 10px 10px 10px;
+    transition: all 0.3s ease-in-out;
+}
+.cont-film > img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.modal-film{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-items: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    display: none;
+}
+.modal-film-container{
+    width: 50%;
+    height: 420px;
+    margin: auto auto;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    background-color: #F0EBE3;
+    animation: modalFadeIn ease 0.5s;
+    position: relative;
+}
+.modal-film-container > div > iframe{
+    width: 100%;
+    height: 350px;
+}
+.close-film{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #607EAA;
+    padding: 3px;
+}
+.close-film:hover{
+    background-color: #9ab7e2;
+}
+@keyframes doimau{
+    from{
+        color: #000;
+    }
+    to{
+        color: var(--colorBorder);
+    }
+}
+.doimau{
+    animation: doimau 2s linear alternate infinite;
+}
+/* contact */
+.contact-fixed1 {
+	position: fixed;
+	right: 0;
+	bottom: 90px;
+	z-index: 999;
+}
+.contact-fixed2 {
+	overflow: hidden;
+    box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%), 0 0.9375rem 1.40625rem rgb(90 97 105 / 10%), 0 0.25rem 0.53125rem rgb(90 97 105 / 12%), 0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+    transition: .3s ease;
+    border-radius: 1rem 0 0 1rem;
+    background-color: #fff;
+}
+.item-footer {
+	color: rgb(130, 102, 24);
+	background: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 55px;
+	height: 55px;
+	border-bottom: 1px solid #dee2e6;
+}
+.contact-fixed2 a{
+    text-decoration: none;
+}
+.item-footer i {
+	font-size: 30px;
+}
+.text-footer2 {
+	display: none;
+	position: absolute;
+    right: 65px;
+    padding: 10px;
+    min-width: 120px;
+    border-radius: 3px;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.item-footer:hover {
+	background-color:#e5db203e;
+}
+.item-footer:hover .text-footer2 {
+	display: block;
+}
+/*dong contact*/
+
+.footer1{
+    width: 90%;
+    margin: auto;
+}
+.footer2{
+    padding: 8px;
+    justify-content: space-between;
+      background:linear-gradient(rgb(223, 235, 88), rgb(158, 164, 71));     
+}
+footer{
+    width: 100%;
+}
+/*footer1*/
+.col50{
+   width: 50%;
+}
+.col50-img img{
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+.col30{
+   width: 25%;
+}
+div.col302{
+   width: 25%;
+}
+.col50 > p{
+   font-size: 20px;
+   font-weight: 550;
+   letter-spacing: .5;
+   padding: 15px;
+   text-align: center;
+}
+.col30{
+   width: 50%;
+   padding: 30px;
+   margin-top: 80px;
+}
+.col30 > h2{
+   font-size: 22px;
+   font-weight: 600;
+   letter-spacing: .5px;
+}
+.col30 > ul{
+   list-style-type: none;
+   line-height: 2.5;
+}
+.col30 > ul > li > a{
+   display: block;
+   text-decoration: none;
+}
+.col30 i{
+   padding-right: 8px;
+}
+div.col302{
+   width: 50%;
+   padding: 30px;
+   margin-top: 80px;
+}
+div.col302 > h2{
+   font-size: 22px;
+   font-weight: 600;
+   letter-spacing: .5px;
+}
+ul.col302{
+   list-style-type: none;
+   font-size: 20px;
+}
+ul.col302 >li{
+   padding: 10px;
+}
+ul.col302 >li>a{
+   text-decoration: none;
+}
+.footer1 li:hover a{
+   color:gray;
+   font-size: 18.5px;
+}
+
+/*footer 2*/
+.text-footer{
+    width: 40%;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: 10px;
+}
+.social-media{
+    margin-right: 265px;
+}
+.list-social-media li{
+    margin:  0 5px;
+    list-style-type: none;
+}
+.list-social-media li a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background: #f5f5f5;
+    display: block;
+    /* để cho 4 cái nút giả đó nằm dưới */
+}
+.list-social-media li a i{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.list-social-media li a:hover i:nth-child(1){
+    transform: translateY(-50px);
+    /* icon dòng 1 nhảy lên do color màu fff nên bị k thấy */
+}
+.list-social-media li a i:nth-child(2){
+    opacity: 0;
+}
+.list-social-media li a:hover i:nth-child(2){
+    opacity: 1;
+}
+.list-social-media li a:hover i:nth-child(2){
+    transform: translateY(-50px);
+}
+.list-social-media li a.ic1:hover{
+    background: #1877F2;
+}
+.list-social-media li a.ic2:hover{
+    background: #1DA1F2;
+}
+.list-social-media li a.ic3:hover{
+    background: #CD201F;
+}
+.list-social-media li a.ic4:hover{
+    background: #E4405F;
+}
+.list-social-media li a:hover{
+    color: #fff;
+}
+
+#backtop{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(248, 200, 8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 1000;
+}
